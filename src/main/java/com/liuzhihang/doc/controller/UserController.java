@@ -53,4 +53,17 @@ public class UserController {
 
         return null;
     }
+
+    /**
+     * RequestParam 注解测试
+     *
+     * @param userId
+     * @param userName
+     * @return
+     */
+    @PostMapping("/respGenericTest")
+    public Result<UserRespVo> requestParam(@RequestParam(required = false) String userId, @RequestParam String userName) {
+
+        return null;
+    }
 }
