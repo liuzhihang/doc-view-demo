@@ -1,18 +1,21 @@
 package com.liuzhihang.doc;
 
+import java.util.Collections;
+import java.util.List;
+
 /**
  * @author liuzhihang
- * @date 2020/10/30 17:30
+ * @date 2021/2/15 10:29
  */
 public class MainTest {
 
     public static void main(String[] args) {
 
-        int x = 2147483647;
+        List<String> emptyList = Collections.EMPTY_LIST;
 
-        x += 2L;
+        for (String s : emptyList) {
 
-        System.out.println(x);
+        }
     }
 
 }

@@ -2,7 +2,7 @@ package com.liuzhihang.doc.dto;
 
 import lombok.Data;
 
-import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @author liuzhihang
@@ -10,66 +10,20 @@ import java.math.BigDecimal;
  */
 @Data
 public class UserRespVo {
-
-    private String userId;
-
+    /**
+     * 用户名字
+     */
     private String userName;
 
     /**
-     * 理财账户id
+     * 用户 id
      */
-    private String shareAcctId;
+    private String userId;
 
-    /**
-     * 别名
-     */
-    private String aliasName;
-
-    /**
-     * 签约号
-     */
-    private String contractId;
-
-    /**
-     * 商户id
-     */
-    private String merchantId;
-
-    /**
-     * 产品编码
-     */
-    private String productCode;
-
-
-    /**
-     * 资产类别
-     */
-    private String assetType;
-
-    /**
-     * 资产总金额
-     */
-    private BigDecimal balance;
-
-    /**
-     * 冻结金额
-     */
-    private BigDecimal freezeAmount;
-
-    /**
-     * 累计收益金额
-     */
-    private BigDecimal revenueAmount;
-
-    /**
-     * 昨日收益金额
-     */
-    private BigDecimal lastRevenue;
-
-    /**
-     * 币种
-     */
-    private String currency;
-
+    private UserRespVo userRespVo;
+    private UserRespVo userRespVo1;
+    private UserRespVo userRespVo2;
+    private List<UserReqVo> UserReqVoList1;
+    private List<UserReqVo> UserReqVoList2;
 
 }

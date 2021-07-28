@@ -7,7 +7,7 @@ import lombok.Data;
  * @date 2020/10/30 15:24
  */
 @Data
-public class Result<T> {
+public class ResultX<T, K> {
 
     public static String SUCCESS_CODE = "00000";
     public static String SUCCESS_MSG = "SUCCESS";
@@ -28,4 +28,9 @@ public class Result<T> {
      * 响应数据
      */
     private T data;
+
+    /**
+     * 响应数据
+     */
+    private T data2;
 }
