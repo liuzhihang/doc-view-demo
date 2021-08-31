@@ -12,6 +12,20 @@ import java.io.Serializable;
 @Data
 public class UserDateAccount implements Serializable {
 
+    /**
+     * 1123111
+     */
     private Long balanceAmount;
+
+    /**
+     * 账户 id
+     */
+    private Long accountId;
+
+    /**
+     * 账户名称
+     */
+    // 账户名称
+    private Long accountName;
 
 }

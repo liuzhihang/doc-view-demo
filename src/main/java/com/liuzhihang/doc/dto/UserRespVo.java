@@ -3,6 +3,7 @@ package com.liuzhihang.doc.dto;
 import lombok.Data;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author liuzhihang
@@ -20,10 +21,25 @@ public class UserRespVo {
      */
     private String userId;
 
+    /**
+     * 测试接口数据
+     *
+     * @DocView.Required
+     */
     private UserRespVo userRespVo;
+    /**
+     * @DocView.Required
+     */
     private UserRespVo userRespVo1;
+    /**
+     * @DocView.Required
+     */
     private UserRespVo userRespVo2;
-    private List<UserReqVo> UserReqVoList1;
-    private List<UserReqVo> UserReqVoList2;
+    /**
+     * @DocView.Required
+     */
+    private List<UserReqVo> userReqVoList1;
+    private List<String> ss;
+    private Map<String, String> sss;
 
 }

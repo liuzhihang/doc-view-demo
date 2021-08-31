@@ -2,6 +2,9 @@ package com.liuzhihang.doc.dto;
 
 import lombok.Data;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @author liuzhihang
  * @date 2020/10/30 15:24
@@ -11,7 +14,6 @@ public class Result<T> {
 
     public static String SUCCESS_CODE = "00000";
     public static String SUCCESS_MSG = "SUCCESS";
-
     /**
      * 响应码
      *
@@ -28,4 +30,6 @@ public class Result<T> {
      * 响应数据
      */
     private T data;
+    private List<T> dataList;
+    private Map<String, T> dataMap;
 }

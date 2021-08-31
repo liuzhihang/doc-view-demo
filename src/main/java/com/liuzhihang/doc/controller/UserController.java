@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 测试接口
+ * 测试接口/二级/三级/四级
  *
  * @author liuzhihang
  * @date 2020/3/6 12:53
- * @DocView.Title 用户相关接口
+ * @DocView.Title 1231231/23123
  */
 @RequestMapping("/user")
 @RestController
@@ -22,14 +22,15 @@ public class UserController {
 
 
     /**
-     * 这是一段接口描述信息
+     * 测试接口
      *
      * @param reqVo reqVo
-     * @return {@link Result<UserRespVo>}
-     * @docName 接口名称测试
+     * @return {@link ResultX<UserRespVo, UserAccount>}
+     * @throws Exception
+     * @DocView.Name respGenericTest
      */
     @PostMapping("/respGenericTest")
-    public ResultX<UserRespVo, UserAccount> respGenericTest(@RequestBody UserReqVo reqVo) {
+    public ResultX<UserRespVo, UserAccount> respGenericTest(@RequestBody UserReqVo reqVo) throws Exception {
 
         return null;
     }
@@ -81,6 +82,8 @@ public class UserController {
 
 
     /**
+     * 这是测试接口
+     *
      * @param reqVo
      * @return
      */
@@ -100,7 +103,7 @@ public class UserController {
      * @return {@link Result<UserRespVo>}
      */
     @PostMapping("/requestParam")
-    public Result<String> requestParam(@RequestParam(required = false) String userId, @RequestParam String userName) {
+    public Result<String> requestParam(@RequestParam UserReqVo reqVo) {
 
         return null;
     }
@@ -117,4 +120,23 @@ public class UserController {
     }
 
 
+    @PostMapping("/requestParamUserAccount")
+    public Result<List<UserAccount>> requestParamUserAccount(@RequestParam(required = false) String userId, @RequestParam String userName) {
+
+        return null;
+    }
+
+
+    @PostMapping("/requestParamMap")
+    public Result<Map<String, UserRespVo>> requestParamMap(@RequestParam(required = false) String userId, @RequestParam String userName) {
+
+        return null;
+    }
+
+
+    @PostMapping("/requestParamUserAc")
+    public Result<UserAccount> requestParamUserAc(@RequestParam(required = false) String userId, @RequestParam String userName) {
+
+        return null;
+    }
 }
