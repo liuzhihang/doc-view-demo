@@ -30,6 +30,6 @@ public class Result<T> {
      * 响应数据
      */
     private T data;
-    private List<T> dataList;
-    private Map<String, T> dataMap;
+//    private List<T> dataList;
+//    private Map<String, T> dataMap;
 }

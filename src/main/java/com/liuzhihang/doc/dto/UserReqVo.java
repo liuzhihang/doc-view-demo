@@ -32,8 +32,6 @@ public class UserReqVo {
     @Schema(required = true, name = "卡号", title = "标题", description = "描述")
     private String cardNo;
 
-    private List<UserAccount> accountList;
-
     @NonNull
     private InnerUser innerUser;
 

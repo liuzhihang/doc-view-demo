@@ -9,13 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 测试接口/二级/三级/四级
- *
- * @author liuzhihang
- * @date 2020/3/6 12:53
- * @DocView.Title 1231231/23123
- */
 @RequestMapping("/user")
 @RestController
 public class UserController {
@@ -23,7 +16,7 @@ public class UserController {
 
     /**
      * 测试接口
-     *
+     * 
      * @param reqVo reqVo
      * @return {@link ResultX<UserRespVo, UserAccount>}
      * @throws Exception
@@ -54,7 +47,7 @@ public class UserController {
     }
 
     /**
-     * 测试 get 请求
+     * 测试 get 请求1
      *
      * @return
      * @name 测试接口
@@ -126,16 +119,35 @@ public class UserController {
         return null;
     }
 
-
+    /**
+     * bbbb
+     *
+     * @param xxxPam xcedeece
+     * @param userAccount
+     * @return
+     */
     @PostMapping("/requestParamMap")
-    public Result<Map<String, UserRespVo>> requestParamMap(@RequestParam(required = false) String userId, @RequestParam String userName) {
+    public Result<Map<String, UserRespVo>> requestParamMap(@RequestParam(required = false) String xxxPam, @RequestBody UserAccount userAccount) {
 
         return null;
     }
 
 
+    /**
+     * xaaa
+     * @param userId 用户 xx
+     * @param userName
+     * @return
+     */
     @PostMapping("/requestParamUserAc")
     public Result<UserAccount> requestParamUserAc(@RequestParam(required = false) String userId, @RequestParam String userName) {
+
+        return null;
+    }
+
+
+    @GetMapping("/requestParamUserAc11")
+    public Result<UserAccount> requestParamUser111(UserAccount userAccount, ReqDto2 reqDto2) {
 
         return null;
     }

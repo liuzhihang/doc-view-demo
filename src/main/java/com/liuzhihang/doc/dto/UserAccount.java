@@ -12,12 +12,12 @@ import java.io.Serializable;
  * @author liuzhihang
  * @date 2020/9/11 15:47
  */
-@Builder
-@Setter
-@Getter
 @Data
 public class UserAccount implements Serializable {
 
+    /**
+     * sdasda
+     */
     private String userId;
 
 }
