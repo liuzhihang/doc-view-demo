@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 测试 dubbo 生成文档
+ * 普通接口
  *
  * @author liuzhihang
  * @date 2020/9/10 11:47
