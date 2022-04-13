@@ -12,7 +12,6 @@ import java.time.LocalDate;
  * @author liuzhihang
  * @version AnnotationDubboService.java, v 0.1 2022/4/13 16:06 zijun
  */
-@DubboService
 public interface AnnotationDubboService {
 
     /**
